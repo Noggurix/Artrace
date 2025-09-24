@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit",
+  },
+
+  "editor.insertSpaces": false,
+  "editor.tabSize": 2,
+  "editor.acceptSuggestionOnCommitCharacter": false
+}
