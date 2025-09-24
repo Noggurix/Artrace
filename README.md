@@ -6,9 +6,7 @@ Turn your photos into stunning stencil and vector art in real time, directly on 
 
 With two unique modes (Stencil & Trace), Artrace lets you fine-tune parameters with sliders, preview instantly, and export results as PNG or SVG.
 
-[![License](https://img.shields.io/github/license/Noggurix/Artrace?style=flat-square)](LICENSE) ![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react&logoColor=61DAFB) ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo) 
-
----
+![GitHub License](https://img.shields.io/github/license/Noggurix/Artrace?style=flat-square&color=%23000630) ![Expo](https://img.shields.io/badge/Expo-000020?logo=expo) ![React Native](https://img.shields.io/badge/React_Native-20232A?logo=react&logoColor=61DAFB) 
 
 <table>
    <tr>
@@ -25,6 +23,7 @@ With two unique modes (Stencil & Trace), Artrace lets you fine-tune parameters w
 </div>
 
 ---
+
 ## Features
 - Pick any image from your gallery 
 - Apply **Trace** or **Stencil** stylization modes
