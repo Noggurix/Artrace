@@ -41,6 +41,9 @@ With two unique modes (Stencil & Trace), Artrace lets you fine-tune parameters w
 ### *Stencil*
 - Applies a high-contrast stencil effect with 3 controllable [parameters](#stencil-parameters)
 
+<br>
+
+<div align=center>
    <table>
    <tr>
       <td align="center">Original</td>
@@ -50,33 +53,31 @@ With two unique modes (Stencil & Trace), Artrace lets you fine-tune parameters w
       <td><img src="examples/exampleVanGoghNormal.jpg" height="250"></td>
       <td><img src="examples/exampleVanGoghStencil.png" height="250"></td>
    </tr>
-   </table>
-
-   <table>
-   <tr>
-      <td align="center">Original</td>
-      <td align="center">Stencil</td>
-   </tr>
    <tr>
       <td><img src="examples/exampleMichaelKaiserNormal.jpg" height="250"></td>
       <td><img src="examples/exampleMichaelKaiserStencil.png" height="250"></td>
    </tr>
    </table>
+</div>
 
+<br>
 
 > These examples resemble sketches/drawings, but not all images will look like this. See the Newton example below:
-
 
 <p align="center">
 <img src="examples/example2.png" width="35%">
 </p>
 
 > The corner appear darker due to high black levels. You may want to remove or brighten the background first if you want more focus on the main subject.
+
 ---
 
 ### *Trace*
 Vectorize images with 13 [parameters](#trace-parameters) for fine-grained control
 
+<br>
+
+<div align=center>
    <table>
    <tr>
       <td align="center">Original</td>
@@ -87,10 +88,14 @@ Vectorize images with 13 [parameters](#trace-parameters) for fine-grained contro
       <td align="center"><img src="examples/exampleTrace2.png" height="250"></td>
    </tr>
    </table>
+</div>
 
 **Resizing images**:
 - Export as SVG and resize without loss of quality, since SVG is vector-based
 
+<br>
+
+<div align=center>
    <table>
    <tr>
       <td align="center">Original</td>
@@ -101,10 +106,14 @@ Vectorize images with 13 [parameters](#trace-parameters) for fine-grained contro
       <td align="center"><img src="examples/exampleCarTraced.png" height="300"><br>Vectorized image resized to 4788 x 10710</td> 
    </tr>
    </table>
+</div>
 
 **Improving hand-drawn lines:**
 - Artrace can also **improve hand-drawn lines**, making them more vivid by using Trace mode followed by Stencil Mode. See below:
 
+<br>
+
+<div align=center>
    <table>
    <tr>
       <td align="center">1. Take an image of a drawing</td>
@@ -117,10 +126,12 @@ Vectorize images with 13 [parameters](#trace-parameters) for fine-grained contro
       <td align="center"><img src="examples/exampleDrawingImproved3.png" height="250"></td>
    </tr>
    </table>
+</div>
 
 ---
 ## Parameters Technical Details
 - Below is a technical overview of the adjustable parameters. If you want to see more about the library used for trace mode, see **[ImageTracer.js](https://github.com/jankovicsandras/imagetracerjs)**.
+
 
    ### Stencil Parameters
    | Parameter | Default | Range | Type | Description |
@@ -158,7 +169,7 @@ Vectorize images with 13 [parameters](#trace-parameters) for fine-grained contro
 
 ###### Prerequisites:
 - [Node](https://nodejs.org/) v20.19+
-- [Expo SDK](https://docs.expo.dev/versions/latest/) v54.0.7+
+- [Expo SDK](https://docs.expo.dev/versions/latest/) v54.0.10+
 
 #### Setup
 1. **Clone the repository**
