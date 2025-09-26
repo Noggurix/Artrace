@@ -21,8 +21,8 @@ export default function HomeScreen() {
     const { status } = await MediaLibrary.requestPermissionsAsync();
     if (status !== 'granted') {
       Alert.alert(
-        'Permissão necessária',
-        'Você precisa permitir acesso à galeria para continuar.'
+        'Permission required',
+        'You need to allow gallery access to continue..'
       );
       return false;
     }
@@ -59,7 +59,7 @@ export default function HomeScreen() {
             setAlbumPath(folderPath);
           }
         } catch (err) {
-          console.error('Erro ao ler imagens salvas:', err);
+          console.error('Error reading saved images:', err);
         }
       }
 
@@ -74,7 +74,7 @@ export default function HomeScreen() {
       });
       return base64;
     } catch (error) {
-      console.error('Erro ao converter URI para Base64:', error);
+      console.error('Error converting URI to Base64:', error);
       return null;
     }
   }
@@ -83,7 +83,7 @@ export default function HomeScreen() {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
 
     if (status !== 'granted') {
-      Alert.alert('Permissão negada', 'Você precisa permitir acesso à galeria para escolher uma imagem.');
+      Alert.alert('Permission denied', 'You need to allow access to the gallery to choose an image.');
       return;
     }
 
@@ -110,7 +110,7 @@ export default function HomeScreen() {
         ImageStore.set(base64);
         router.push('/editor');
       } else {
-        Alert.alert('Erro', 'Não foi possível carregar a imagem.');
+        Alert.alert('Error', 'Unable to load image.');
       }
     } finally {
       setLoading(false);
